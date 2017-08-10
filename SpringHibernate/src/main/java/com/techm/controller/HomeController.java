@@ -62,20 +62,20 @@ public class HomeController {
 		user.setUserName(request.getParameter("userName"));
 		user.setPassword(request.getParameter("password"));
 		try{
-		
+		String regMsg="regMsg";
 		Boolean b=userService.saveUser(user);
 		if(b){
-			m.addAttribute("regMsg", user.getUserName()+" registered succesfully!");
+			m.addAttribute(regMsg, user.getUserName()+" registered succesfully!");
 			return "welcome";
 		}
 		else
 		{
-			redirectAttribute.addFlashAttribute("regMsg", "Failed to register : User Name '"+user.getUserName()+"' already exists!");   
+			redirectAttribute.addFlashAttribute(regMsg, "Failed to register : User Name '"+user.getUserName()+"' already exists!");   
 			return "register";
 		}
 		}
 		catch (Exception e) {
-			redirectAttribute.addFlashAttribute("regMsg","Failed to register : User Name '"+user.getUserName()+"' already exists!");   
+			redirectAttribute.addFlashAttribute(regMsg,"Failed to register : User Name '"+user.getUserName()+"' already exists!");   
 			return "redirect:register";
 		}
 	}
