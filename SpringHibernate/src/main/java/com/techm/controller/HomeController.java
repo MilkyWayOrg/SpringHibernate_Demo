@@ -61,8 +61,9 @@ public class HomeController {
 		User user = new User();
 		user.setUserName(request.getParameter("userName"));
 		user.setPassword(request.getParameter("password"));
-		try{
 		String regMsg="regMsg";
+		try{
+		
 		Boolean b=userService.saveUser(user);
 		if(b){
 			m.addAttribute(regMsg, user.getUserName()+" registered succesfully!");
