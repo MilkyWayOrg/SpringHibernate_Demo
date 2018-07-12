@@ -5,6 +5,7 @@
 	<artifactId>SpringHibernateS</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
+	<packaging>war</packaging>
 	<properties>
 		<org.springframework-version>4.3.3.RELEASE</org.springframework-version>
 		<hibernate.version>5.2.10.Final</hibernate.version>
