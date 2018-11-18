@@ -1,1 +1,2 @@
-After stash commit Developer
+Resolving stash pop merge conflict
+Developer staging
