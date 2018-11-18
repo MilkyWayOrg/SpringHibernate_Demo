@@ -1,2 +1,0 @@
-Resolving stash pop merge conflict
-Developer staging
