@@ -1,1 +1,1 @@
-Before stash commit Developer
+After stash commit Developer
